@@ -4,7 +4,7 @@
             button:hover{
                 box-shadow: 0px 0px 20px #39FF14;
             }
-            .cuybdigyfsagysdkcydbgfsycdygscuton:hover{
+            .inputclassmain:hover{
                 box-shadow: 0px 0px 20px #39FF14;
                     
 
@@ -34,7 +34,7 @@
         <br>
         <br>
         <br>
-        <input type="submit" class="cuybdigyfsagysdkcydbgfsycdygscuton" style="display: block; background-color: #39FF14;border:#00ffff solid 8px;border-radius: 30px;width: 300px;height: 50px;color:#000000;margin: auto;font-size: 20pt;font-family: 'Lucida Sans';font-weight: bold;">
+        <input type="submit" class="inputclassmain" style="display: block; background-color: #39FF14;border:#00ffff solid 8px;border-radius: 30px;width: 300px;height: 50px;color:#000000;margin: auto;font-size: 20pt;font-family: 'Lucida Sans';font-weight: bold;">
     </form>
     </div>
     <script>
@@ -43,7 +43,7 @@
         var e = document.querySelector("#hiii")
         var b = 0
         var k=[]
-        function hiiiiiiiiiii(even){
+        function onSubmit(even){
             even.preventDefault()
             var temp=document.createElement("div")
             temp.id=`hiiiii${b}`
@@ -53,32 +53,35 @@
             tempy.textContent=`Name Of Activty:${d.value}`
             var tempyy=document.createElement("h2")
             tempyy.style.cssText="color:#39FF14; margin-left: 15px;text-align: center;"
-            tempyy.textContent=`protitey:${e.value}`
+            tempyy.textContent=`priority:${e.value}`
             var tempyyy=document.createElement("button")
             tempyyy.style.cssText="display: block; background-color: #39FF14;border:#00ffff solid 8px;border-radius: 30px;width: 300px;height: 50px;color:#000000;margin: auto;font-size: 20pt;font-family: 'Lucida Sans';font-weight: bold;"
             tempyyy.textContent="finish"
             tempyyy.id=`hiiiiiiiii${b}`
-            tempyyy.className="buebdurgtvdiruytbgkr"
+            tempyyy.className="buttonclassmain"
             temp.appendChild(tempy)
             temp.appendChild(tempyy)
             temp.appendChild(tempyyy)
             document.body.appendChild(temp)
             b=b+1
+
+            d.value=""
+            e.value="Select"
             
 
         }
-        function gfdfgdesgfhtdfhrttftgby(evenenenene){
-            if (evenenenene.target.className=="buebdurgtvdiruytbgkr"){
-                var gerertefjugdfbbjygreburfbcucwbuyujbvegrbvegrsbyvbgebgvy=evenenenene.target.id
-                var nfhtygre98tgnovhrgty="hiiiii"+gerertefjugdfbbjygreburfbcucwbuyujbvegrbvegrsbyvbgebgvy.slice(10)
-                document.getElementById(nfhtygre98tgnovhrgty).remove()
+        function click(event){
+            if (event.target.className=="buttonclassmain"){
+                var outlinee=event.target.id
+                var code="hiiiii"+outlinee.slice(10)
+                document.getElementById(code).remove()
 
 
-                
+
             }
         }
-        a.onsubmit = hiiiiiiiiiii
-        document.addEventListener("click",gfdfgdesgfhtdfhrttftgby)
+        a.onsubmit = onSubmit
+        document.addEventListener("click",click)
         
 
 
