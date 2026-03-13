@@ -1,5 +1,6 @@
 <html>
     <head>
+        
 
     </head>
     <body style="
@@ -7,11 +8,11 @@
         <h1 style="align-self: center;font-size: 40pt;color: #00ffff;">Todo List</h1>
     <div style="align-self: center;justify-self: center;outline: #00ffff solid 10px;width: 400px
     ;border-radius: 50px;background-color: rgb(0, 0, 0);display: flex; flex-direction: column;">
-    <form>
-        <h2 style="color:#39FF14; margin-left: 15px;">Name Of Activty</h2>
-        <input type="text" style=" margin-left: 25px;background-color: black;border: #ffffff solid 3px;width: 300px;height: 30px;color:#39FF14;">
+    <form id="hi">
+        <h2 style="color:#39FF14; margin-left: 15px;" >Name Of Activty</h2>
+        <input type="text" style=" margin-left: 25px;background-color: black;border: #ffffff solid 3px;width: 300px;height: 30px;color:#39FF14;" id="hii">
         <h2 style="color:#39FF14; margin-left: 15px;">proirtey</h2>
-        <select  style=" margin-left: 25px;background-color: black;border: #ffffff solid 3px;width: 300px;height: 30px;color:#39FF14;">
+        <select  style=" margin-left: 25px;background-color: black;border: #ffffff solid 3px;width: 300px;height: 30px;color:#39FF14;" id="hiii">
             <option disabled selected>Select</option>
             <option>Ultra High</option>
             <option>High</option>
@@ -26,6 +27,57 @@
         <input type="submit" style="display: block; background-color: #39FF14;border:#00ffff solid 8px;border-radius: 30px;width: 300px;height: 50px;color:#000000;margin: auto;font-size: 20pt;font-family: 'Lucida Sans';font-weight: bold;">
     </form>
     </div>
+    <script>
+        var a = document.querySelector("#hi")
+        var d = document.querySelector("#hii")
+        var e = document.querySelector("#hiii")
+        var b = 0
+        var k=[]
+        function hiiiiiiiiiii(even){
+            even.preventDefault()
+            var temp=document.createElement("div")
+            temp.id=`hiiiii${b}`
+            temp.style.cssText="align-self: center;justify-self: center;outline: #00ffff solid 10px;width: 400px;border-radius: 50px;background-color: rgb(0, 0, 0);display: flex; flex-direction: column;"
+            var tempy=document.createElement("h2")
+            tempy.style.cssText="color:#39FF14; margin-left: 15px;text-align: center;"
+            tempy.textContent=`Name Of Activty:${d.value}`
+            var tempyy=document.createElement("h2")
+            tempyy.style.cssText="color:#39FF14; margin-left: 15px;text-align: center;"
+            tempyy.textContent=`protitey:${e.value}`
+            var tempyyy=document.createElement("button")
+            tempyyy.style.cssText="display: block; background-color: #39FF14;border:#00ffff solid 8px;border-radius: 30px;width: 300px;height: 50px;color:#000000;margin: auto;font-size: 20pt;font-family: 'Lucida Sans';font-weight: bold;"
+            tempyyy.textContent="finish"
+            tempyyy.id=`hiiiiiiiii${b}`
+            tempyyy.className="buebdurgtvdiruytbgkr"
+            temp.appendChild(tempy)
+            temp.appendChild(tempyy)
+            temp.appendChild(tempyyy)
+            document.body.appendChild(temp)
+            b=b+1
+            
+
+        }
+        function gfdfgdesgfhtdfhrttftgby(evenenenene){
+            if (evenenenene.target.className=="buebdurgtvdiruytbgkr"){
+                gerertefjugdfbbjygreburfbcucwbuyujbvegrbvegrsbyvbgebgvy=evenenenene.target.id
+                var nfhtygre98tgnovhrgty="hiiiii"+gerertefjugdfbbjygreburfbcucwbuyujbvegrbvegrsbyvbgebgvy.at(-1)
+                document.getElementById(nfhtygre98tgnovhrgty).remove()
+
+
+                
+            }
+        }
+        a.onsubmit = hiiiiiiiiiii
+        document.addEventListener("click",gfdfgdesgfhtdfhrttftgby)
+        
+
+
+        
+
+
+
+
+    </script>
 
     </body>
 </html>
